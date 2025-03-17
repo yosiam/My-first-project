@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/soporte.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="alternate" hreflang="es" href="soporte.html" />
+    <title>Soporte</title>
+  </head>
+  <body>
+    <header>
+      <div id="contenedorHeader">
+        <div id="contenedorImagen">
+          <div>
+            <img src="../media/img/logo.png" alt="LogoJuego" id="logoJuego" />
+          </div>
+          <div class="nombreP">
+            <img
+              src="../media/img/nombrePagina.png"
+              alt="NombrePagina"
+              id="nombrePagina" />
+          </div>
+        </div>
+        <div id="contenedorIconos">
+          <a href="inicioSesion.html" hreflang="es">
+            <i class="fa-solid fa-circle-user" id="iniciarSesion"></i>
+          </a>
+        </div>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="" hreflang="es"
+              ><i class="fa-duotone fa-solid fa-hat-wizard"></i
+            ></a>
+          </li>
+          <li><a href="../index.html" hreflang="es">Inicio</a></li>
+          <li><a href="inicioSesion.html" hreflang="es">Iniciar Sesión</a></li>
+          <li><a href="informacion.html" hreflang="es">Información</a></li>
+          <li>
+            <a href="soporte.html" class="posicion" hreflang="es">Soporte</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contenedorPrincipal">
+      <section id="contenedorFormulario">
+        <form action="../index.html" method="get">
+          <fieldset>
+            <legend>Soporte Técnico</legend>
+            <label for="nombre" id="lnombre" name="lnombre"
+              >Correo Electrónico:</label
+            >
+            <input
+              type="email"
+              id="nombre"
+              name="nombre"
+              placeholder="Escribe aquí..."
+              required />
+            <label for="comentarios" id="lcomentarios" name="lcomentarios"
+              >Comentarios:</label
+            >
+            <textarea
+              name="comentarios"
+              id="comentarios"
+              placeholder="Escriba aquí sus quejas o comentarios acerca de la página"
+              required></textarea>
+            <div id="contenedorBotones">
+              <button type="submit">Enviar</button>
+              <button type="button" onclick="window.history.back();">
+                Volver
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <!-- Sección del pie de página -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Columna 1: Sobre Nosotros -->
+        <div class="footer-column">
+          <h5>Sobre Nosotros</h5>
+          <p>
+            Surviver Web-Based Game es una plataforma online dedicada a la
+            creación de juegos web, brindando entretenimiento, herramientas y
+            más.
+          </p>
+        </div>
+
+        <!-- Columna 2: Enlaces Útiles -->
+        <div class="footer-column">
+          <h5>Enlaces Útiles</h5>
+          <ul>
+            <li>
+              <a href="../index.html" class="footer-link" hreflang="es"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer-link" hreflang="es">Base de Datos</a>
+            </li>
+            <li>
+              <a href="/html/informacion.html" class="footer-link" hreflang="es"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="footer-column">
+          <h5>Contacto</h5>
+          <ul>
+            <li>
+              <i class="fa-solid fa-envelope"></i> contacto@surviverweb.com
+            </li>
+            <li><i class="fa-solid fa-phone"></i> +34 123 456 789</li>
+            <li><i class="fa-solid fa-map-marker-alt"></i> España</li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Síguenos -->
+        <div class="footer-column">
+          <h5>Síguenos</h5>
+          <div class="social-links">
+            <a href="https://wa.me" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/whatsapp_2504957.png"
+                alt="WhatsApp"
+                class="social-icon" />
+            </a>
+            <a href="https://discord.com" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/discord_2504896.png"
+                alt="Discord"
+                class="social-icon" />
+            </a>
+            <a href="https://instagram.com" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/instagram_2504918.png"
+                alt="Instagram"
+                class="social-icon" />
+            </a>
+            <a href="https://tiktok.com" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/tiktok_2504942.png"
+                alt="TikTok"
+                class="social-icon" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna 5: Términos y Condiciones -->
+        <div class="footer-column">
+          <h5>Términos y Condiciones</h5>
+          <ul>
+            <li>
+              <a href="" class="footer-link" hreflang="es">
+                Ver los Términos y Condiciones
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer-link" hreflang="es">
+                Política de Privacidad
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sección de Propiedad Intelectual -->
+      <div class="footer-bottom">
+        <p class="footer-text">
+          Esta página es propiedad de <strong>Surviver Web Game</strong> &copy;.
+          Página actualizada en 2025
+        </p>
+      </div>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        // Agrega dinámicamente el elemento de audio para "Términos y Condiciones"
+        var termsAudio = $(
+          '<audio id="termsAudio"><source src="../media/audio/terminosYCondiciones.mp3" type="audio/mp3"></audio>'
+        );
+        $("body").append(termsAudio);
+
+        // Al hacer click en el enlace "Ver los Términos y Condiciones", se reproduce el audio
+        $("a.footer-link")
+          .filter(function () {
+            return $(this).text().trim() === "Ver los Términos y Condiciones";
+          })
+          .on("click", function (e) {
+            e.preventDefault(); // Evita la acción por defecto del enlace
+            $("#termsAudio")[0].play();
+          });
+      });
+    </script>
+  </body>
+</html>

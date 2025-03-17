@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="alternate" hreflang="es" href="index.html" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Página Principal</title>
+  </head>
+
+  <body>
+    <!-- Sección de la cabecera -->
+    <header>
+      <div id="contenedorHeader">
+        <!-- Contenedor de la imagen del logo y nombre del juego -->
+        <div id="contenedorImagen">
+          <div>
+            <img src="media/img/logo.png" alt="LogoJuego" id="logoJuego" />
+          </div>
+          <div class="nombreP">
+            <img
+              src="media/img/nombrePagina.png"
+              alt="NombrePagina"
+              id="nombrePagina" />
+          </div>
+        </div>
+
+        <!-- Contenedor de los iconos de volumen y inicio de sesión -->
+        <div id="contenedorIconos">
+          <i class="fa-solid fa-volume-high" id="volumenPagina"></i>
+          <a href="html/inicioSesion.html" hreflang="es">
+            <i class="fa-solid fa-circle-user" id="iniciarSesion"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Menú de navegación -->
+      <ul class="menu">
+        <li>
+          <a href="" hreflang="es"
+            ><i class="fa-duotone fa-solid fa-hat-wizard"></i
+          ></a>
+        </li>
+        <li><a href="index.html" class="posicion" hreflang="es">Inicio</a></li>
+        <li>
+          <a href="html/inicioSesion.html" hreflang="es">Iniciar Sesión</a>
+        </li>
+        <li><a href="html/informacion.html" hreflang="es">Información</a></li>
+        <li><a href="html/soporte.html" hreflang="es">Soporte</a></li>
+        <li>
+          <select name="seleccionIdioma" id="seleccionIdioma">
+            <option value="espanhol">Español</option>
+            <option value="ingles">Inglés</option>
+          </select>
+        </li>
+      </ul>
+    </header>
+
+    <section id="autoria">
+      <h2>Sobre Surviver Web Based Game</h2>
+      <p>
+        Surviver Web Based Game es un juego de supervivencia en línea donde los
+        jugadores eligen entre cuatro magos de distintos elementos: fuego, agua,
+        tierra y eléctrico. Cada mago tiene habilidades y características únicas
+        que influyen en la estrategia del jugador. Enfréntate a hordas de
+        enemigos, mejora tus poderes y domina los elementos para convertirte en
+        el hechicero más poderoso.
+      </p>
+      <p>
+        Este proyecto ha sido desarrollado con pasión y dedicación para ofrecer
+        una experiencia envolvente dentro de un mundo pixel art lleno de magia y
+        desafíos.
+      </p>
+
+      <!-- Botón de "Quiero Conocerme" -->
+      <button id="botonConocerme">¿Quieres Conocerme? Púlsame</button>
+
+      <!-- Enlace de LinkedIn (oculto por defecto) -->
+      <a
+        hreflang="es"
+        href="https://www.linkedin.com/in/manuu-caruncho-alderegu%C3%ADa-3850a0305/"
+        id="linkedin"
+        target="_blank">
+        Conóceme en LinkedIn
+      </a>
+
+      <!-- Texto descriptivo adicional (oculto por defecto) -->
+      <div id="descripcion" style="display: none">
+        <p>
+          Soy un Programador sin experiencia creando proyectos con mucha ilusión
+          ahí te dejo mi LinkedIn por si quieres ver un poco más sobre mí
+        </p>
+      </div>
+    </section>
+
+    <section id="contenidoPrincipal">
+      <div id="contenedor_inicioPartida">
+        <!-- Texto encima del botón -->
+        <div id="textoLogin">
+          <p>Para empezar a jugar, inicia sesión o crea una cuenta</p>
+        </div>
+        <!-- Enlace para iniciar la partida -->
+        <a href="html/inicioSesion.html" id="iniciarPartida" hreflang="es"
+          >Iniciar Partida</a
+        >
+      </div>
+    </section>
+
+    <!-- Sección del pie de página -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Columna 1: Sobre Nosotros -->
+        <div class="footer-column">
+          <h5>Sobre Nosotros</h5>
+          <p>
+            Surviver Web-Based Game es una plataforma online dedicada a la
+            creación de juegos web, brindando entretenimiento, herramientas y
+            más.
+          </p>
+        </div>
+
+        <!-- Columna 2: Enlaces Útiles -->
+        <div class="footer-column">
+          <h5>Enlaces Útiles</h5>
+          <ul>
+            <li>
+              <a href="index.html" class="footer-link" hreflang="es">Inicio</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link" hreflang="es">Base de Datos</a>
+            </li>
+            <li>
+              <a href="/html/informacion.html" class="footer-link" hreflang="es"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="footer-column">
+          <h5>Contacto</h5>
+          <ul>
+            <li>
+              <i class="fa-solid fa-envelope"></i> contacto@surviverweb.com
+            </li>
+            <li><i class="fa-solid fa-phone"></i> +34 123 456 789</li>
+            <li><i class="fa-solid fa-map-marker-alt"></i> España</li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Síguenos -->
+        <div class="footer-column">
+          <h5>Síguenos</h5>
+          <div class="social-links">
+            <a href="https://wa.me" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/whatsapp_2504957.png"
+                alt="WhatsApp"
+                class="social-icon" />
+            </a>
+            <a href="https://discord.com" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/discord_2504896.png"
+                alt="Discord"
+                class="social-icon" />
+            </a>
+            <a href="https://instagram.com" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/instagram_2504918.png"
+                alt="Instagram"
+                class="social-icon" />
+            </a>
+            <a href="https://tiktok.com" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/tiktok_2504942.png"
+                alt="TikTok"
+                class="social-icon" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna 5: Términos y Condiciones -->
+        <div class="footer-column">
+          <h5>Términos y Condiciones</h5>
+          <ul>
+            <li>
+              <a href="" class="footer-link" hreflang="es">
+                Ver los Términos y Condiciones
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer-link" hreflang="es">
+                Política de Privacidad
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sección de Propiedad Intelectual -->
+      <div class="footer-bottom">
+        <p class="footer-text">
+          Esta página es propiedad de <strong>Surviver Web Game</strong> &copy;.
+          Página actualizada en 2025
+        </p>
+      </div>
+    </footer>
+
+    <!-- Audio de fondo que se reproduce automáticamente -->
+    <audio
+      id="background-music"
+      src="media/audio/backgroundSound.mp3"
+      autoplay
+      loop></audio>
+
+    <!-- Script de animación para el logo -->
+    <script>
+      $(document).ready(function () {
+        $("#logoJuego").animate(
+          {
+            opacity: 1,
+            left: "1px",
+          },
+          500
+        );
+      });
+      $(document).ready(function () {
+        // Agrega dinámicamente el elemento de audio para "Términos y Condiciones"
+        var termsAudio = $(
+          '<audio id="termsAudio"><source src="/media/audio/terminosYCondiciones.mp3" type="audio/mp3"></audio>'
+        );
+        $("body").append(termsAudio);
+
+        // Al hacer click en el enlace "Ver los Términos y Condiciones", se reproduce el audio
+        $("a.footer-link")
+          .filter(function () {
+            return $(this).text().trim() === "Ver los Términos y Condiciones";
+          })
+          .on("click", function (e) {
+            e.preventDefault(); // Evita la acción por defecto del enlace
+            $("#termsAudio")[0].play();
+          });
+      });
+      $(document).ready(function () {
+        // Aseguramos que el enlace y el texto descriptivo estén ocultos al inicio
+        $("#linkedin, #descripcion").hide();
+
+        $("#botonConocerme").click(function () {
+          // Desvanecer (fade out) el botón
+          $(this).fadeOut("slow", function () {
+            // Al finalizar, se muestra el enlace con efecto fading
+            $("#linkedin").fadeIn("slow");
+            // Y se despliega el bloque descriptivo con efecto sliding
+            $("#descripcion").slideDown("slow");
+          });
+        });
+      });
+    </script>
+
+    <!-- Script para la funcionalidad de la página principal -->
+    <script src="scripts/index.js" type="module"></script>
+  </body>
+</html>

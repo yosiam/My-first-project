@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  /* Elimina el margen predeterminado */
+  padding: 0;
+  /* Elimina el padding predeterminado */
+  background-color: #1f1d19;
+  /* Color de fondo para la página */
+  font-family: "Cinzel Decorative", Georgia, serif;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: "Cinzel Decorative", Georgia, serif;
+}
+
+#contenedorIconos {
+  margin-top: 30px;
+}
+
+/* Estilo del contenedor principal del header */
+#contenedorHeader {
+  background-color: #352436;
+}
+
+/* Contenedor de las imágenes del logo y nombre */
+#contenedorImagen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#contenedorImagen img {
+  width: 150px;
+  height: auto; /* Ajusta el tamaño de las imágenes */
+}
+
+.nombreP {
+  display: flex;
+  align-items: center;
+}
+
+/* Iconos de volumen e inicio de sesión */
+#contenedorIconos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+#iniciarSesion {
+  color: #bc881b;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#iniciarSesion:hover {
+  transform: scale(1.2);
+}
+
+/* Contenedor principal de la cabecera */
+#contenedorImagen {
+  display: grid;
+  /* Utiliza un diseño de cuadrícula */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 135px));
+  /* Define cinco columnas de igual tamaño */
+  background-color: #352436;
+  /* Color de fondo del contenedor */
+}
+
+/* Establece algunos estilos básicos para toda la página */
+#contenedorPiePagina {
+  text-align: center;
+  /* Texto centrado */
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: white;
+  /* Texto blanco */
+  position: fixed;
+  /* Posición fija */
+  bottom: 0;
+  /* Posicionado en la parte inferior */
+  width: 100%;
+  /* Ancho completo */
+}
+
+/* Menú de navegación */
+.menu {
+  text-shadow: 2px 2px 2px #1f1d19;
+  /* Sombra del texto del menú */
+  margin: 0;
+  /* Sin margen */
+  padding: 0;
+  /* Sin relleno */
+  right: 0;
+  /* Posicionado a la derecha */
+  left: 0;
+  /* Posicionado a la izquierda */
+  list-style: none;
+  /* Sin estilo de lista */
+  background-color: #333;
+  /* Color de fondo gris oscuro */
+  overflow: hidden;
+  /* Oculta contenido desbordante */
+  font-weight: bold;
+  /* Peso de la fuente */
+  font-size: large;
+  /* Tamaño de la fuente */
+}
+
+/* Elementos de la lista del menú */
+.menu li {
+  float: left;
+  /* Alinea los elementos a la izquierda */
+}
+
+/* Enlaces del menú */
+.menu a {
+  display: block;
+  /* Bloque completo clicable */
+  color: #daa520;
+  /* Color del texto */
+  text-align: center;
+  /* Texto centrado */
+  padding: 15px;
+  /* Relleno interno */
+  text-decoration: none;
+  /* Sin subrayado */
+}
+
+/* Estilo del enlace del menú al pasar el cursor */
+.menu a:hover {
+  background-color: #440770;
+  /* Color de fondo al pasar el cursor */
+  transition: 0.6s;
+  /* Transición suave */
+}
+
+/* Estilo del enlace del menú al pasar el cursor */
+.menu a:focus {
+  background-color: #440770;
+  /* Color de fondo al pasar el cursor */
+  transition: 0.6s;
+  /* Transición suave */
+}
+
+/* =============================
+   Estilos Generales del Footer
+   ============================= */
+.footer {
+  margin-top: 100px;
+  background-color: #352436; /* Morado oscuro */
+  color: #ffd700; /* Dorado */
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+/* Contenedor de columnas en una sola fila */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Permitimos el ajuste en pantallas pequeñas */
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* Estilo de cada columna */
+.footer-column {
+  flex: 1;
+  margin: 0 15px;
+  min-width: 200px;
+}
+
+/* Títulos de cada sección */
+.footer h5 {
+  margin-bottom: 1rem;
+  color: #d4af37; /* Dorado más brillante */
+}
+
+/* Texto y listas */
+.footer p,
+.footer ul,
+.footer li {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Eliminar estilos por defecto de listas */
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Enlaces */
+.footer-link {
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #d4af37;
+  text-decoration: underline;
+}
+
+/* Redes Sociales */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 40px;
+  /* Tamaño de los íconos */
+  cursor: pointer;
+  /* Cambia el cursor a mano al pasar sobre el ícono */
+  filter: grayscale(100%);
+  /* Aplica un filtro en escala de grises a los íconos */
+  transition: filter 0.3s, transform 0.3s;
+  /* Agrega una transición suave para el filtro y el tamaño */
+}
+
+.social-icon:hover {
+  filter: grayscale(0%);
+  /* Elimina el filtro de escala de grises al hacer hover */
+  transform: scale(1.1);
+  /* Aumenta ligeramente el tamaño del ícono */
+}
+
+/* Propiedad intelectual */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #d4af37;
+  padding-top: 20px;
+}
+
+/* =============================
+         Media Query para pantallas pequeñas
+         ============================= */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    margin: 15px 0;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+#creacionCuenta {
+  font-weight: bolder;
+}
+
+/* Estilos para el contenedor principal */
+#contenedorPrincipal {
+  display: flex;
+  /* Utiliza flexbox para el diseño */
+  justify-content: center;
+  /* Centra horizontalmente los elementos hijos */
+  align-items: center;
+  /* Centra verticalmente los elementos hijos */
+  text-align: center;
+  margin-top: 150px;
+}
+
+/* Estilos para el contenedor del formulario */
+#contenedorFormulario {
+  background-color: #ffffff;
+  /* Color de fondo blanco para el formulario */
+  padding: 20px;
+  /* Espaciado interno de 20px */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 1px 4px 8px rgba(218, 165, 32, 0.6),
+    /* Sombra dorada difusa */ 1px 2px 4px rgba(218, 165, 32, 0.4);
+  /* Sombra dorada suave */
+  /* Sombra ligera alrededor del formulario */
+  width: auto;
+  /* Ancho del formulario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Selector: etiqueta#identificador */
+div #contenedorBotones {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Estilos para el campo de leyenda */
+legend {
+  text-align: center;
+  font-size: 1.2em;
+  /* Aumenta el tamaño de la fuente */
+  font-weight: bold;
+}
+
+/* Estilos para las etiquetas */
+label {
+  text-align: center;
+  display: block;
+  /* Las etiquetas ocupan toda la línea */
+  margin-top: 10px;
+  /* Espacio superior */
+  font-weight: bold;
+  /* Texto en negrita */
+}
+
+/* Estilos para los campos de entrada */
+input {
+  width: 100%;
+  /* Ocupa todo el ancho disponible */
+  padding: 8px;
+  /* Espaciado interno */
+  margin-top: 5px;
+  /* Espacio superior */
+  margin-bottom: 20px;
+  /* Espacio inferior */
+  border: 1px solid #ccc;
+  /* Borde gris claro */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  box-sizing: border-box;
+  /* Incluye el padding y el borde en el cálculo del ancho total */
+}
+
+.error {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+}
+
+/* Estilos para los botones */
+.button {
+  background-image: linear-gradient(45deg, #4b0082, #8a2be2);
+  /* Crea un degradado de colores dorados */
+  color: white;
+  /* Color del texto blanco */
+  padding: 5px 5px;
+  /* Espaciado interno vertical y horizontal */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre el botón */
+  transition: all 0.3s ease;
+  /* Transición suave para cambios */
+  text-decoration: none;
+  border: none;
+  font-size: large;
+}
+
+.button:focus {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de sombra y profundidad en el hover */
+.button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 3px 6px rgb(104, 9, 141);
+  /* Sombra con color dorado y negro para dar efecto de profundidad */
+  transform: translateY(-3px);
+  /* Eleva el botón un poco hacia arriba */
+}
+
+label.required::after {
+  content: " *";
+  color: red;
+  font-weight: bold;
+}
+
+.posicion {
+  background-color: #440770;
+}
+
+a:visited {
+  color: gold;
+}

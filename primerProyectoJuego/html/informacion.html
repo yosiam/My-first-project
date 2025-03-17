@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      hreflang="es"
+      href="../css/informacion.css"
+      type="text/css" />
+    <link
+      hreflang="es"
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      hreflang="es"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="alternate" hreflang="es" href="../html/informacion.html" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Información</title>
+  </head>
+
+  <script>
+    $(document).ready(function () {
+      let lastScrollTop = 0;
+
+      $(window).on("scroll", function () {
+        let currentScroll = $(this).scrollTop();
+
+        if (currentScroll > lastScrollTop) {
+          console.log("Bajando");
+        } else {
+          console.log("Subiendo");
+        }
+
+        lastScrollTop = currentScroll;
+      });
+    });
+
+    $(document).ready(function () {
+      $("#togglePersonajes").click(function () {
+        $(".container").toggle("slow"); // Alterna entre ocultar/mostrar con animación
+      });
+    });
+  </script>
+
+  <body>
+    <!-- Cabecera -->
+    <header>
+      <div id="contenedorHeader">
+        <!-- Contenedor de la imagen del logo y nombre del juego -->
+        <div id="contenedorImagen">
+          <div>
+            <img src="../media/img/logo.png" alt="LogoJuego" id="logoJuego" />
+          </div>
+          <div class="nombreP">
+            <img
+              src="../media/img/nombrePagina.png"
+              alt="NombrePagina"
+              id="nombrePagina" />
+          </div>
+        </div>
+
+        <!-- Contenedor de los iconos de volumen y inicio de sesión -->
+        <div id="contenedorIconos">
+          <a hreflang="es" href="inicioSesion.html">
+            <i class="fa-solid fa-circle-user" id="iniciarSesion"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Menú de navegación -->
+      <nav>
+        <ul class="menu">
+          <li>
+            <a hreflang="es" href=""
+              ><i class="fa-duotone fa-solid fa-hat-wizard"></i
+            ></a>
+          </li>
+          <li><a hreflang="es" href="../index.html">Inicio</a></li>
+          <li><a hreflang="es" href="inicioSesion.html">Iniciar Sesión</a></li>
+          <li>
+            <a hreflang="es" href="informacion.html" class="posicion"
+              >Información</a
+            >
+          </li>
+          <li><a hreflang="es" href="soporte.html">Soporte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+      <section id="contenedorInformacion">
+        <h1>Información básica</h1>
+
+        <!-- Controles -->
+        <h2 id="textoSecundario">Controles</h2>
+        <p class="informacionGeneral">
+          Dark Covenant es un juego con vista asimétrica con controles sencillos
+          W, A, S, D.
+        </p>
+        <div id="controles">
+          <i class="fa-solid fa-w" id="w"></i>
+          <i class="fa-solid fa-a" id="a"></i>
+          <i class="fa-solid fa-s" id="s"></i>
+          <i class="fa-solid fa-d" id="d"></i>
+        </div>
+        <p class="informacionBotones">
+          Tiene un modo de autoapuntado con la tecla R o apuntado manual si
+          prefieres con el puntero del ratón.
+        </p>
+
+        <!-- Información sobre las clases -->
+        <h2 id="textoSecundario">Información acerca de las distintas clases</h2>
+        <p class="informacionGeneral">
+          - Para empezar con lo más básico habrá 4 tipos de magia, cada cual con
+          sus propios atributos.
+        </p>
+
+        <button id="togglePersonajes">Mostrar/Ocultar Personajes</button>
+
+        <!-- Contenedor Personajes -->
+        <section class="container">
+          <div class="card" id="magoFuego">
+            <img src="../media/img/magoDoFogo.jpg" alt="Mago de Fuego" />
+            <h2>Fuego</h2>
+            <p class="fuego">Vida: 75</p>
+            <p class="fuego">Defensa: 5</p>
+            <p class="fuego">Ataque: 50</p>
+            <p class="fuego">Velocidad: 5</p>
+            <p class="fuego">Velocidad de Ataque: 2</p>
+          </div>
+
+          <div class="card" id="magoElectrico">
+            <img
+              src="../media/img/magoDaElectricidad.png"
+              alt="Mago Eléctrico" />
+            <h2>Eléctrico</h2>
+            <p class="electrico">Vida: 75</p>
+            <p class="electrico">Defensa: 5</p>
+            <p class="electrico">Ataque: 20</p>
+            <p class="electrico">Velocidad: 15</p>
+            <p class="electrico">Velocidad de Ataque: 10</p>
+          </div>
+
+          <div class="card" id="magoAgua">
+            <img src="../media/img/magoDaAgua.jpg" alt="Mago de Agua" />
+            <h2>Agua</h2>
+            <p class="agua">Vida: 100</p>
+            <p class="agua">Defensa: 10</p>
+            <p class="agua">Ataque: 25</p>
+            <p class="agua">Velocidad: 10</p>
+            <p class="agua">Velocidad de Ataque: 5</p>
+          </div>
+
+          <div class="card" id="magoTierra">
+            <img src="../media/img/magoDaTerra.png" alt="Mago de Tierra" />
+            <h2>Tierra</h2>
+            <p class="tierra">Vida: 150</p>
+            <p class="tierra">Defensa: 15</p>
+            <p class="tierra">Ataque: 10</p>
+            <p class="tierra">Velocidad: 5</p>
+            <p class="tierra">Velocidad de Ataque: 2</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- Sección de Vídeo -->
+    <section id="videoSection">
+      <video controls>
+        <source src="../media/video/trailer.mp4" type="video/mp4" />
+        <track
+          kind="subtitles"
+          src="subtitulos.vtt"
+          srclang="es"
+          label="Español" />
+        Tu navegador no soporta el elemento de video.
+      </video>
+      <div class="video-info">
+        <h3>Vídeos: identificación textual y subtítulos</h3>
+        <p>Trailer del juego</p>
+        <h3>Audio y video: descripción y mecanismos para parar y pausar</h3>
+        <p>
+          Para parar el vídeo pulse click encima o presione espacio para
+          pausarlo, y para bajar el volumen tiene que ir al icono de la derecha
+          con forma de volumen y desde ahí puede ajustar el volumen.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección del pie de página -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Columna 1: Sobre Nosotros -->
+        <div class="footer-column">
+          <h5>Sobre Nosotros</h5>
+          <p>
+            Surviver Web-Based Game es una plataforma online dedicada a la
+            creación de juegos web, brindando entretenimiento, herramientas y
+            más.
+          </p>
+        </div>
+
+        <!-- Columna 2: Enlaces Útiles -->
+        <div class="footer-column">
+          <h5>Enlaces Útiles</h5>
+          <ul>
+            <li>
+              <a href="../index.html" class="footer-link" hreflang="es"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer-link" hreflang="es">Base de Datos</a>
+            </li>
+            <li>
+              <a href="/html/informacion.html" class="footer-link" hreflang="es"
+                >Información</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="footer-column">
+          <h5>Contacto</h5>
+          <ul>
+            <li>
+              <i class="fa-solid fa-envelope"></i> contacto@surviverweb.com
+            </li>
+            <li><i class="fa-solid fa-phone"></i> +34 123 456 789</li>
+            <li><i class="fa-solid fa-map-marker-alt"></i> España</li>
+          </ul>
+        </div>
+
+        <!-- Columna 4: Síguenos -->
+        <div class="footer-column">
+          <h5>Síguenos</h5>
+          <div class="social-links">
+            <a href="https://wa.me" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/whatsapp_2504957.png"
+                alt="WhatsApp"
+                class="social-icon" />
+            </a>
+            <a href="https://discord.com" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/discord_2504896.png"
+                alt="Discord"
+                class="social-icon" />
+            </a>
+            <a href="https://instagram.com" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/instagram_2504918.png"
+                alt="Instagram"
+                class="social-icon" />
+            </a>
+            <a href="https://tiktok.com" target="_blank" hreflang="es">
+              <img
+                src="/media/img/imgLogosRedes/tiktok_2504942.png"
+                alt="TikTok"
+                class="social-icon" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna 5: Términos y Condiciones -->
+        <div class="footer-column">
+          <h5>Términos y Condiciones</h5>
+          <ul>
+            <li>
+              <a href="" class="footer-link" hreflang="es">
+                Ver los Términos y Condiciones
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer-link" hreflang="es">
+                Política de Privacidad
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sección de Propiedad Intelectual -->
+      <div class="footer-bottom">
+        <p class="footer-text">
+          Esta página es propiedad de <strong>Surviver Web Game</strong> &copy;.
+          Página actualizada en 2025
+        </p>
+      </div>
+    </footer>
+
+    <script language="JavaScript" src="../scripts/informacion.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // Agrega dinámicamente el elemento de audio para "Términos y Condiciones"
+        var termsAudio = $(
+          '<audio id="termsAudio"><source src="../media/audio/terminosYCondiciones.mp3" type="audio/mp3"></audio>'
+        );
+        $("body").append(termsAudio);
+
+        // Al hacer click en el enlace "Ver los Términos y Condiciones", se reproduce el audio
+        $("a.footer-link")
+          .filter(function () {
+            return $(this).text().trim() === "Ver los Términos y Condiciones";
+          })
+          .on("click", function (e) {
+            e.preventDefault(); // Evita la acción por defecto del enlace
+            $("#termsAudio")[0].play();
+          });
+      });
+    </script>
+  </body>
+</html>

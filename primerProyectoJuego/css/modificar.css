@@ -1,0 +1,261 @@
+body {
+  overflow-x: hidden;
+}
+
+/* Establece algunos estilos básicos para toda la página */
+#contenedorPiePagina {
+  text-align: center;
+  /* Texto centrado */
+  background-color: #333;
+  /* Fondo gris oscuro */
+  color: white;
+  /* Texto blanco */
+  bottom: 0;
+  /* Posicionado en la parte inferior */
+  width: 100%;
+  /* Ancho completo */
+}
+
+/* Contenedor principal de la cabecera */
+#contenedorImagen {
+  display: grid;
+  /* Utiliza un diseño de cuadrícula */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 135px));
+  /* Define cinco columnas de igual tamaño */
+  background-color: #352436;
+  /* Color de fondo del contenedor */
+}
+
+#contenedorImagen img {
+  width: 100%;
+  /* Las imágenes ocupan todo el ancho disponible en su celda */
+  height: auto;
+}
+
+#contenedorNombre {
+  margin-top: 23px;
+  width: 200px;
+}
+
+/* Contenedor del icono de inicio de sesión */
+#contenedorIconos {
+  margin-top: 43px;
+  margin-left: 166vh;
+  /* Añade margen a la izquierda */
+}
+
+/* Icono de inicio de sesión */
+#iniciarSesion {
+  color: #bc881b;
+  /* Color del icono de inicio de sesión */
+  font-size: 30px;
+  /* Tamaño del icono de inicio de sesión */
+  margin-right: 20px;
+}
+
+/* Menú de navegación */
+.menu {
+  text-shadow: 2px 2px 2px #1f1d19;
+  /* Sombra del texto del menú */
+  margin: 0;
+  /* Sin margen */
+  padding: 0;
+  /* Sin relleno */
+  right: 0;
+  /* Posicionado a la derecha */
+  left: 0;
+  /* Posicionado a la izquierda */
+  list-style: none;
+  /* Sin estilo de lista */
+  background-color: #333;
+  /* Color de fondo gris oscuro */
+  overflow: hidden;
+  /* Oculta contenido desbordante */
+  font-weight: bold;
+  /* Peso de la fuente */
+  font-size: large;
+  /* Tamaño de la fuente */
+}
+
+/* Elementos de la lista del menú */
+.menu li {
+  float: left;
+  /* Alinea los elementos a la izquierda */
+}
+
+/* Enlaces del menú */
+.menu a {
+  display: block;
+  /* Bloque completo clicable */
+  color: #daa520;
+  /* Color del texto */
+  text-align: center;
+  /* Texto centrado */
+  padding: 15px;
+  /* Relleno interno */
+  text-decoration: none;
+  /* Sin subrayado */
+}
+
+/* Estilo del enlace del menú al pasar el cursor */
+.menu a:hover {
+  background-color: #440770;
+  /* Color de fondo al pasar el cursor */
+  transition: 0.6s;
+  /* Transición suave */
+}
+
+/* Estilo para el pie de página */
+footer {
+  text-align: center;
+  /* Texto centrado */
+  background-color: #333;
+  /* Fondo verde */
+  color: white;
+  /* Texto blanco */
+  position: fixed;
+  /* Fijo en la parte inferior */
+  bottom: 0;
+  /* Se posiciona en el fondo */
+  width: 100%;
+  /* Ocupa todo el ancho */
+}
+
+body {
+  margin: 0;
+  /* Elimina el margen predeterminado */
+  padding: 0;
+  /* Elimina el padding predeterminado */
+  background-color: #1f1d19;
+  /* Color de fondo para la página */
+  padding-bottom: 40px;
+  /* Añadir espacio para el footer */
+  font-family: "Cinzel Decorative", Georgia, serif;
+}
+
+/* Estilos para el contenedor principal */
+#contenedorPrincipal {
+  display: flex;
+  /* Utiliza flexbox para el diseño */
+  justify-content: center;
+  /* Centra horizontalmente los elementos hijos */
+  align-items: center;
+  /* Centra verticalmente los elementos hijos */
+  min-height: 75vh;
+  /* Ocupa toda la altura de la ventana */
+  text-align: center;
+}
+
+/* Estilos para el contenedor del formulario */
+#contenedorFormulario {
+  background-color: #ffffff;
+  /* Color de fondo blanco para el formulario */
+  padding: 20px;
+  /* Espaciado interno de 20px */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 1px 4px 8px rgba(218, 165, 32, 0.6),
+    /* Sombra dorada difusa */ 1px 2px 4px rgba(218, 165, 32, 0.4);
+  /* Sombra dorada suave */
+  /* Sombra ligera alrededor del formulario */
+  width: 300px;
+  /* Ancho del formulario */
+}
+
+/* Selector: etiqueta#identificador */
+div #contenedorBotones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+}
+
+/* Estilos para el campo de leyenda */
+legend {
+  text-align: center;
+  font-size: 1.2em;
+  /* Aumenta el tamaño de la fuente */
+  margin-bottom: 10px;
+  /* Espacio inferior */
+  font-weight: bold;
+}
+
+/* Estilos para las etiquetas */
+label {
+  text-align: center;
+  display: block;
+  /* Las etiquetas ocupan toda la línea */
+  margin-top: 10px;
+  /* Espacio superior */
+  font-weight: bold;
+  /* Texto en negrita */
+  margin: 10px;
+}
+
+/* Selector: por atributo */
+/* Estilos para los campos de entrada */
+input {
+  width: 100%;
+  /* Ocupa todo el ancho disponible */
+  padding: 8px;
+  /* Espaciado interno */
+  margin-top: 5px;
+  /* Espacio superior */
+  margin-bottom: 20px;
+  /* Espacio inferior */
+  border: 1px solid #ccc;
+  /* Borde gris claro */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  box-sizing: border-box;
+  /* Incluye el padding y el borde en el cálculo del ancho total */
+}
+
+/* Estilos para los botones */
+.button {
+  /* Añadir espacio para el footer */
+  font-family: "Cinzel Decorative", Georgia, serif;
+  height: 30px;
+  background-image: linear-gradient(45deg, #4b0082, #8a2be2);
+  /* Crea un degradado de colores dorados */
+  color: white;
+  /* Color del texto blanco */
+  /* Espaciado interno vertical y horizontal */
+  border: none;
+  /* Sin borde */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre el botón */
+  margin-right: 10px;
+  /* Espacio a la derecha */
+  transition: all 0.3s ease;
+  /* Transición suave para cambios */
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: flex;justify-content: center;
+  align-items: center;
+}
+
+/* Efecto de sombra y profundidad en el hover */
+.button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 3px 6px rgb(104, 9, 141);
+  /* Sombra con color dorado y negro para dar efecto de profundidad */
+  transform: translateY(-3px);
+  /* Eleva el botón un poco hacia arriba */
+}
+
+a:visited {
+  color: gold;
+}

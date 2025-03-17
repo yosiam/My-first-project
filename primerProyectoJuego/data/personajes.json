@@ -1,0 +1,34 @@
+[
+  {
+    "mago": "Fuego",
+    "vida": "75",
+    "defensa": "5",
+    "ataque": "50",
+    "velocidad": "5",
+    "velocidadAtaque": "2"
+  },
+  {
+    "mago": "Agua",
+    "vida": "100",
+    "defensa": "10",
+    "ataque": "25",
+    "velocidad": "10",
+    "velocidadAtaque": "5"
+  },
+  {
+    "mago": "Electrico",
+    "vida": "75",
+    "defensa": "5",
+    "ataque": "20",
+    "velocidad": "15",
+    "velocidadAtaque": "10"
+  },
+  {
+    "mago": "Tierra",
+    "vida": "150",
+    "defensa": "15",
+    "ataque": "10",
+    "velocidad": "5",
+    "velocidadAtaque": "2"
+  }
+]

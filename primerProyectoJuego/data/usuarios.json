@@ -1,0 +1,122 @@
+[
+  {
+    "correo": "andres.garcia1@example.com",
+    "contrasenha": "AndresG123!"
+  },
+  {
+    "correo": "maria.fernandez2@example.com",
+    "contrasenha": "MariaF456$"
+  },
+  {
+    "correo": "juan.lopez3@example.com",
+    "contrasenha": "JuanL789#"
+  },
+  {
+    "correo": "carmen.gomez4@example.com",
+    "contrasenha": "CarmenG321&"
+  },
+  {
+    "correo": "luis.martinez5@example.com",
+    "contrasenha": "LuisM654*"
+  },
+  {
+    "correo": "ana.sanchez6@example.com",
+    "contrasenha": "AnaS987@"
+  },
+  {
+    "correo": "jose.diaz7@example.com",
+    "contrasenha": "JoseD123!"
+  },
+  {
+    "correo": "laura.ramirez8@example.com",
+    "contrasenha": "LauraR456$"
+  },
+  {
+    "correo": "pedro.hernandez9@example.com",
+    "contrasenha": "PedroH789#"
+  },
+  {
+    "correo": "lucia.rodriguez10@example.com",
+    "contrasenha": "LuciaR321&"
+  },
+  {
+    "correo": "miguel.perez11@example.com",
+    "contrasenha": "MiguelP654*"
+  },
+  {
+    "correo": "sara.garcia12@example.com",
+    "contrasenha": "SaraG987@"
+  },
+  {
+    "correo": "rafael.fernandez13@example.com",
+    "contrasenha": "RafaelF123!"
+  },
+  {
+    "correo": "paula.lopez14@example.com",
+    "contrasenha": "PaulaL456$"
+  },
+  {
+    "correo": "antonio.gomez15@example.com",
+    "contrasenha": "AntonioG789#"
+  },
+  {
+    "correo": "rosa.martinez16@example.com",
+    "contrasenha": "RosaM321&"
+  },
+  {
+    "correo": "javier.sanchez17@example.com",
+    "contrasenha": "JavierS654*"
+  },
+  {
+    "correo": "alicia.diaz18@example.com",
+    "contrasenha": "AliciaD987@"
+  },
+  {
+    "correo": "manuel.ramirez19@example.com",
+    "contrasenha": "ManuelR123!"
+  },
+  {
+    "correo": "veronica.hernandez20@example.com",
+    "contrasenha": "VeronicaH456$"
+  },
+  {
+    "correo": "pablo.rodriguez21@example.com",
+    "contrasenha": "PabloR789#"
+  },
+  {
+    "correo": "cristina.perez22@example.com",
+    "contrasenha": "CristinaP321&"
+  },
+  {
+    "correo": "alejandro.garcia23@example.com",
+    "contrasenha": "AlejandroG654*"
+  },
+  {
+    "correo": "marta.fernandez24@example.com",
+    "contrasenha": "MartaF987@"
+  },
+  {
+    "correo": "emilio.lopez25@example.com",
+    "contrasenha": "EmilioL123!"
+  },
+  {
+    "correo": "sofia.gomez26@example.com",
+    "contrasenha": "SofiaG456$"
+  },
+  {
+    "correo": "julio.martinez27@example.com",
+    "contrasenha": "JulioM789#"
+  },
+  {
+    "correo": "raquel.sanchez28@example.com",
+    "contrasenha": "RaquelS321&"
+  },
+  {
+    "correo": "carlos.diaz29@example.com",
+    "contrasenha": "CarlosD654*"
+  },
+  {
+    "correo": "nuria.ramirez30@example.com",
+    "contrasenha": "NuriaR987@"
+  }
+]
